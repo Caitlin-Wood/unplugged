@@ -97,9 +97,161 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* HEADER ======================================*/
+
+.main-header{
+    width:100%;
+
+}
+
+.header-wrapper {
+    width:100%;
+
+}
+
+.logo{
+    width:100%;
+    margin:auto;
+
+}
+
+nav{
+    width:100%;
+
+}
+
+nav ul{
+
+}
+
+nav ul li a{
+
+}
+
+
+/* MAIN ======================================*/
+
+main{
+    width:96%; /*free content from edges*/
+    padding: 0 2%; 
+    margin:auto; /*center content*/
+    clear:both;
+}
 
 
 
+.hero-area{
+    width:100%;
+    margin:auto;
+
+}
+
+.top-story{
+    width:100%;
+
+}
+
+.top-img {
+    width:100%;
+    margin:0;
+
+}
+
+figure img{
+    width:100%;
+}
+
+.sidebar{
+    width:100%;
+
+}
+
+.sidebar-newsletter input{
+    width: 100%;
+    margin: auto;
+    display:block;
+}
+
+@media (max-width: 768px){
+    .sidebar-aboutus{
+        display:none; /* hide part of sidebar in mobile */
+    }
+    .sidebar-faqs{
+        display:none;
+    }
+}
+
+
+/* main FEED ======================================*/
+
+.feed{
+    width:100%;
+}
+
+.feed-item {
+    width:100%;
+    margin:5% 0;
+    clear:both;
+    display:block;
+}
+
+.feed-type{
+    width:100%;
+    margin:0 auto;
+    clear:both;
+
+}
+
+
+.feed-img{
+    width:45%;
+    margin:0;
+    float:left;
+    
+}
+
+div .feed-info {
+    width: 45%;
+    margin:auto;
+    float:right;
+}
+
+.feed-info h3{
+    width:96%;
+    padding-left:4%;
+    display:inline;
+}
+
+
+@media (max-width: 768px){
+    .feed-item p{
+        display:none;
+    }
+
+}
+
+ /* ABOUT PAGE ================================ */
+
+   .contact-info{
+       width: 100%;
+   }
+
+
+/* FOOTER ======================================*/
+
+
+footer{
+    width: 100%;
+    margin: auto;
+
+}
+
+.footer-logo{
+    width:50%;
+    margin:auto;
+
+
+}
 
 
 
