@@ -135,7 +135,6 @@ main{
     width:96%; /*free content from edges*/
     padding: 0 2%; 
     margin:auto; /*center content*/
-    clear:both;
 }
 
 
@@ -161,25 +160,38 @@ figure img{
     width:100%;
 }
 
+.top-info{
+    width:96%
+    margin: auto;
+    padding: 0 2%;
+}
+
 .sidebar{
     width:100%;
-
+    float:left;
 }
 
-.sidebar-newsletter input{
-    width: 100%;
+.sidebar-newsletter, .sidebar-faqs, .sidebar-aboutus{
+        width:100%;
+        margin:auto;
+}
+
+.sidebar-newsletter form{
+    width: 90%;
     margin: auto;
-    display:block;
+    padding:0 5%;
 }
 
-@media (max-width: 768px){
-    .sidebar-aboutus{
-        display:none; /* hide part of sidebar in mobile */
-    }
-    .sidebar-faqs{
-        display:none;
-    }
+.sidebar-newsletter form input{
+    display:block;
+    width:98%
 }
+
+
+.sidebar-faqs, .sidebar-aboutus{
+        display:none; /* hide part of sidebar in mobile */
+}
+
 
 
 /* main FEED ======================================*/
@@ -191,8 +203,10 @@ figure img{
 .feed-item {
     width:100%;
     margin:5% 0;
-    clear:both;
-    display:block;
+}
+
+.feed-item p{
+        display:none;
 }
 
 .feed-type{
@@ -207,14 +221,15 @@ figure img{
     width:45%;
     margin:0;
     float:left;
-    
 }
 
 div .feed-info {
     width: 45%;
-    margin:auto;
-    float:right;
+    float:left;
 }
+
+
+/*
 
 .feed-info h3{
     width:96%;
@@ -222,13 +237,6 @@ div .feed-info {
     display:inline;
 }
 
-
-@media (max-width: 768px){
-    .feed-item p{
-        display:none;
-    }
-
-}
 
  /* ABOUT PAGE ================================ */
 
@@ -351,15 +359,122 @@ footer{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+
+@media screen and (min-width: 768px) {
+    /*Tablet styles here*/
+
+
+/* TABLET HEADER ======================================*/
+
+
+.main-header{
+    width:100%;
+    margin:auto;
+    padding:0 3%;
+
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+.main-header .header-wrapper {
+    width:94%;
+    max-width:960px;
+    margin: 0 auto;
+
+}
+
+.logo{
+    width:40%;
+    float:left;
+
+}
+
+nav{
+    width:60%;
+    float:left;
+
+}
+
+nav ul{
+
+}
+
+nav ul li{
+    display:inline;
+
+
+}
+
+
+/* TABLET MAIN ======================================*/
+
+
+
+
+.top-img {
+    width:57%;
+    padding right: 3%;
+    float: left;
+
+}
+
+
+.top-info{
+    width:35%;
+    float:left;
+}
+
+.sidebar{
+    clear:both;
+    width:35%;
+    float:right;
+
+}
+
+.sidebar-newsletter, .sidebar-aboutus, .sidebar-faqs{
+    display:block;
+}
+
+
+/* TABLET FEED ======================================*/
+
+.feed{
+    width:60%;
+    float:left;
+}
+
+
+.feed-img{
+    width:30%;
+    
+}
+
+div .feed-info {
+    width: 70%;
+    
+}
+
+
+@media (max-width: 767px){
+    .feed-item p{
+        display:none;
+    }
+
+}
+
+ /* TABLET ABOUT PAGE ================================ */
+
+   .contact-info{
+       width: 100%;
+   }
+
+}
+
+
+
+
+
+@media screen and (min-width: 940px) {
+    /*Desktop styles here*/
 }
 
 /* ==========================================================================
