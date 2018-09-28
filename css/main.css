@@ -97,15 +97,107 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+ /* TEXT STYLES ======================================*/
+
+ body, html {
+ 	font-family: 'Source Sans Pro', sans-serif;
+ 	font-size:16px;
+ 	background-color: #eeeeee;
+	
+}
+ 
+a {
+	font-weight: 700;
+	color:#3d3d3d;
+	text-decoration: none;
+}
+ 
+p {
+	color: #636363;
+	font-size: 0.875em;
+	line-height:1.4;
+
+}
+ 
+img {
+ 
+}
+ 
+h1 {
+	font-size:1.31em;
+	line-height:1.6;
+	color:#000000;
+	
+}
+
+
+ h2, h3, h4 {
+	color: #000000;
+	font-weight: 700;
+}
+ 
+h3{
+	margin:0 0 0 0.5em;
+}
+ 
+h2,h3 {
+	font-size:0.875em;
+	
+}
+
+h4 {
+	font-size:0.625em;
+	
+}
+ 
+figure {
+	border:1.5px solid #cfcacb;
+}
+ 
+.logo{
+	border:none;
+	border-bottom:1.5px solid #cfcacb;
+}
+
+.footer-logo figure{
+	border:none;
+}
+
+
+
+.btn {
+ color: #fff;
+ font-weight: 700;
+ text-transform: uppercase;
+ line-height: 2.5;
+ text-align: center;
+ box-shadow: 2px 2px 0px #DADADA;
+ height: 2.5em;
+ width: 100%;
+ background-color:#ff1256;
+ 
+}
+ 
+
+.input-email{
+	box-shadow: 1px 1px 0 #cfcacb;
+	height:1.75em;
+}
+
+
+
 /* HEADER ======================================*/
 
 .main-header{
     width:100%;
+    background-color:#dddddd;
 
 }
 
 .header-wrapper {
     width:100%;
+    background-color:#dddddd;
+    
 
 }
 
@@ -121,12 +213,29 @@ nav{
 }
 
 nav ul{
-
+	padding:0;
+	margin:auto;	
+	background-color:#dddddd;
+	list-style-type:none;
+	text-align:center;
 }
+
+nav ul li{
+	border-bottom:1.5px solid #cfcacb;
+	height:35px;
+}
+
 
 nav ul li a{
-
+	text-transform: uppercase;
+	font-size:1.2em;
 }
+
+img.icon{
+	width:25px;
+	height:25px;
+}
+
 
 
 /* MAIN ======================================*/
@@ -142,6 +251,8 @@ main{
 .hero-area{
     width:100%;
     margin:auto;
+    margin-top:2em;
+    border-bottom:1px solid #cfcacb;
 
 }
 
@@ -169,11 +280,13 @@ figure img{
 .sidebar{
     width:100%;
     float:left;
+    border-bottom:1px solid #cfcacb;
 }
 
 .sidebar-newsletter, .sidebar-faqs, .sidebar-aboutus{
         width:100%;
         margin:auto;
+        padding:0 0 1.5em 0;
 }
 
 .sidebar-newsletter form{
@@ -188,6 +301,7 @@ figure img{
 }
 
 
+
 .sidebar-faqs, .sidebar-aboutus{
         display:none; /* hide part of sidebar in mobile */
 }
@@ -196,23 +310,30 @@ figure img{
 
 /* main FEED ======================================*/
 
+article .feed-item{
+	float:left;
+}
+
 .feed{
     width:100%;
+    float:left;
 }
 
 .feed-item {
     width:100%;
-    margin:5% 0;
+    margin:0 0 5% 0;
+    float:left;
 }
 
 .feed-item p{
-        display:none;
+    display:none;
 }
 
 .feed-type{
     width:100%;
-    margin:0 auto;
     clear:both;
+    margin: 0 auto;
+    
 
 }
 
@@ -223,10 +344,12 @@ figure img{
     float:left;
 }
 
-div .feed-info {
-    width: 45%;
+.feed-info{
+    width: 53%;
     float:left;
+    margin:0;
 }
+
 
 
 /*
@@ -244,6 +367,14 @@ div .feed-info {
        width: 100%;
    }
 
+   .contact-info ul{
+   	list-style-type:none;
+   }
+
+   .strong{
+   	font-weight:700;
+   }
+
 
 /* FOOTER ======================================*/
 
@@ -251,6 +382,7 @@ div .feed-info {
 footer{
     width: 100%;
     margin: auto;
+    float:left;
 
 }
 
