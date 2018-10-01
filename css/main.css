@@ -118,6 +118,10 @@ p {
 	line-height:1.4;
 
 }
+
+.feed-info p{
+	margin-left:0.5em;
+}
  
 img {
  
@@ -171,7 +175,7 @@ figure {
  text-transform: uppercase;
  line-height: 2.5;
  text-align: center;
- box-shadow: 2px 2px 0px #DADADA;
+ box-shadow: 0 2px 2px 0px #DADADA;
  height: 2.5em;
  width: 100%;
  background-color:#ff1256;
@@ -184,26 +188,44 @@ figure {
 	height:1.75em;
 }
 
+.morebtn {
+ color: #fff;
+ font-weight: 700;
+ text-transform: uppercase;
+ line-height: 2.5;
+ text-align: center;
+ box-shadow: 0 2px 2px 0px #DADADA;
+ height: 2.5em;
+ width: 100%;
+ background-color:#b21e49;
+ 
+}
+
+
 
 
 /* HEADER ======================================*/
 
 .main-header{
     width:100%;
+    margin:auto;
     background-color:#dddddd;
 
 }
 
 .header-wrapper {
     width:100%;
-    background-color:#dddddd;
+    /*border-bottom:1.5px solid #cfcacb;*/
+  
     
 
 }
 
 .logo{
     width:100%;
-    margin:auto;
+    margin:0 auto;
+    border:none;
+    border-bottom:1px solid #cfcacb;
 
 }
 
@@ -213,16 +235,17 @@ nav{
 }
 
 nav ul{
-	padding:0;
-	margin:auto;	
+	padding:0;	
+	margin:0;
 	background-color:#dddddd;
-	list-style-type:none;
-	text-align:center;
+	list-style:none;
+	
 }
 
 nav ul li{
-	border-bottom:1.5px solid #cfcacb;
-	height:35px;
+	border-bottom:1px solid #cfcacb;
+	padding:10px 0;
+	text-align:center;
 }
 
 
@@ -244,6 +267,7 @@ main{
     width:96%; /*free content from edges*/
     padding: 0 2%; 
     margin:auto; /*center content*/
+    clear:both;
 }
 
 
@@ -251,13 +275,15 @@ main{
 .hero-area{
     width:100%;
     margin:auto;
-    margin-top:2em;
-    border-bottom:1px solid #cfcacb;
+
+    
 
 }
 
 .top-story{
     width:100%;
+    border-bottom:1px solid #cfcacb;
+    padding:0.5em 0;
 
 }
 
@@ -280,13 +306,14 @@ figure img{
 .sidebar{
     width:100%;
     float:left;
-    border-bottom:1px solid #cfcacb;
+    
 }
 
-.sidebar-newsletter, .sidebar-faqs, .sidebar-aboutus{
-        width:100%;
-        margin:auto;
-        padding:0 0 1.5em 0;
+.sidebar-newsletter, .sidebar-aboutus, .sidebar-faqs{
+    width:100%;
+    margin:auto;
+    padding:0 0 1.5em 0;
+    border-bottom:1px solid #cfcacb;
 }
 
 .sidebar-newsletter form{
@@ -312,21 +339,30 @@ figure img{
 
 article .feed-item{
 	float:left;
+
 }
 
 .feed{
     width:100%;
     float:left;
+    padding-top:0.25em;
 }
 
 .feed-item {
     width:100%;
-    margin:0 0 5% 0;
+    margin:0;
+    padding:2% 0;
     float:left;
+    border-bottom:1px solid #cfcacb;
+
 }
 
 .feed-item p{
     display:none;
+}
+
+#last-item {
+	border-bottom:none;
 }
 
 .feed-type{
@@ -363,8 +399,13 @@ article .feed-item{
 
  /* ABOUT PAGE ================================ */
 
+   .aboutus{
+   	color:#ff1256;
+   }
+
    .contact-info{
        width: 100%;
+       border-bottom:1px solid #cfcacb;
    }
 
    .contact-info ul{
@@ -375,14 +416,56 @@ article .feed-item{
    	font-weight:700;
    }
 
+   .mission{
+   	border-bottom:1px solid #cfcacb;
+   }
+
+     /*team member info*******************/
+
+
+.team-member{
+	clear:both;
+	margin:0  0 5% ;
+	float:left;
+}
+
+.team-img{
+	float:left;
+	padding: 0 2% 2% 0;
+
+}
+
+.team-name, .team-title, .team-description{
+	width:100%;
+	display:block;
+	margin:1%;
+}
+
+     /*min mobile layout change*******************/
+
+    @media (max-width:350px){
+
+     .team-name, .team-title, .team-description{
+	float:left;
+		}
+	}
+
+
+
+/* FAQS page ======================================*/
+
+.faqsnav{
+   	color:#ff1256;
+   }
+
 
 /* FOOTER ======================================*/
-
 
 footer{
     width: 100%;
     margin: auto;
     float:left;
+    border-top:1px solid #cfcacb;;
 
 }
 
@@ -497,15 +580,15 @@ footer{
 
 
 .main-header{
-     width: 100%;
-    margin: auto;
-    padding: 0 3%;
-}
+	width:100%;
+	margin:auto;
+ }
 
-.main-header .header-wrapper {
+.header-wrapper {
     width: 94%;
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
+    height:107.75px;
   }
 
 
@@ -522,11 +605,16 @@ nav{
 }
 
 nav ul{
+	margin:0;
+	padding:40px 0;
+	text-align:center;
 
 }
 
 nav ul li{
     display:inline;
+    border:none;
+    padding-right: 20px;
 
 
 }
@@ -534,14 +622,18 @@ nav ul li{
 
 /* TABLET MAIN ============================*/
 
+.logo {
+	border:none;
+}
 
 .top.story{
     width: 100%;
+    border-bottom:1px solid #cfcacb;
 }
 
 .top-img {
     width:57%;
-    padding-right: 3%;
+    margin-right: 3%;
     float: left;
 
 }
@@ -554,7 +646,7 @@ nav ul li{
 
 .sidebar{
     clear:both;
-    width:35%;
+    width:38%;
     float:right;
 
 }
@@ -564,12 +656,15 @@ nav ul li{
 }
 
 
+
 /* TABLET FEED ============================*/
 
 .feed{
     width:60%;
     float:left;
+    border-right:1px solid #cfcacb;
 }
+
 
 
 .feed-img{
@@ -581,6 +676,11 @@ div .feed-info {
     width: 70%;
     
 }
+
+
+
+
+/* TABLET Footer ============================*/
 
 .footer-logo{
     width:40%;
@@ -602,14 +702,44 @@ div .feed-info {
 /*=====================================================*/
 
 
+.logo{
+    width:30%;
+    float:left;
+
+}
+
+nav{
+    width:70%;
+    float:left;
+
+}
+
+nav ul{
+	margin:0;
+	padding:40px 0;
+	text-align:center;
+
+}
+
+nav ul li{
+    display:inline;
+    border:none;
+    padding:0 10px;
+
+
+}
+
+
+
 
 
 /* DESKTOP MAIN ======================================*/
 
 
 .top-story{
-    width:65%;
+    width:68%;
     float:left;
+   
 }
 
 .top-img{
@@ -624,17 +754,20 @@ div .feed-info {
     clear:none;
     width:30%;
     float:right;
-
 }
+
 
 
 
 /* DESKTOP FEED ======================================*/
 
 .feed{
+  
     width:100%;
     float:none;
     clear:both;
+    border:none;
+    border-top:1px solid #cfcacb;
 }
 
 
@@ -649,7 +782,8 @@ div .feed-info {
 }
 
 .feed-item p{
-        display:block;
+    display:block;
+
 }
 
 
