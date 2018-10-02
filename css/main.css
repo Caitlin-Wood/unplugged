@@ -205,7 +205,6 @@ img {
 
 
 
-
 /* HEADER ======================================*/
 
 .main-header{
@@ -400,11 +399,13 @@ article .feed-item{
 }
 
 
- /* ABOUT PAGE ================================ */
+ /* ================================ ABOUT PAGE =============================== */
 
    .aboutus{
    	color:#ff1256;
    }
+
+   /* Contact info ***********/
 
    .contact-info{
        width: 100%;
@@ -414,6 +415,8 @@ article .feed-item{
    .contact-info ul{
    	list-style-type:none;
    }
+
+   /*Mission Statement *********/
 
    .strong{
    	font-weight:700;
@@ -433,25 +436,65 @@ article .feed-item{
 }
 
 .team-img{
+	width:190px;
+	height:190px;
+	border: 1px solid #ccc;
+	margin: 0 5% 1% 0;
 	float:left;
-	padding: 0 2% 2% 0;
-
 }
 
-.team-name, .team-title, .team-description{
-	width:100%;
+.team-name{
+	font-weight:700;
+	font-size:1em;
 	display:block;
-	margin:1%;
+	margin-bottom:0;
+
 }
 
-     /*min mobile layout change*******************/
+.team-title{
+	color:#000000;
+	display:block;
+	margin-top:0;
+}
 
-    @media (max-width:350px){
+.team-description{
+	display:none;
+}
 
-     .team-name, .team-title, .team-description{
-	float:left;
-		}
-	}
+#team-img-jack{
+
+background: #333 url('../img/team-jack.png') no-repeat center;
+background-size:cover;
+
+}
+
+#team-img-lana{
+
+background: #333 url('../img/team-lana.png') no-repeat center;
+background-size:cover;
+
+}
+
+#team-img-willow{
+
+background: #333 url('../img/team-willow.png') no-repeat center;
+background-size:cover;
+
+}
+
+			/* Media About Page ============================*/
+
+			@media (min-width: 300px){
+				.team-description{
+						display:block;
+						margin-top:0;
+				}
+
+			}
+
+
+
+
 
 
 
@@ -691,6 +734,7 @@ div .feed-info {
     width: 70%;
     
 }
+
 
 
 
